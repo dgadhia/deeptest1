@@ -1,5 +1,3 @@
-FROM deeptest1:latest
+FROM httpd:2.4
 
-COPY / index.html
-
-CMD [ "deeptest1", "./index.html" ]
+COPY ./index-html/ /usr/local/apache2/htdocs/
