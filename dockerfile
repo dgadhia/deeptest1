@@ -1,7 +1,5 @@
-FROM httpd:2.4
+FROM deeptest1:latest
 
-COPY ./public-html/ /usr/local/apache2/htdocs/
+COPY ./index.html
 
-docker build -t my-apache2
-
-docker run -dit -p 8080:80 --name my-running-app my-apache2 
+CMD [ "deeptest1", "./index.html" ]
