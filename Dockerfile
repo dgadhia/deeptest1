@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx.01
 
 COPY . /Users/deepgadhia/Documents/GitHub
 
